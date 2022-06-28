@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.navbar {
+    background: #ffffcc;
+    height: 50px;
+    width: 100%;
+    margin: 0 0 5px 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+}
+::-webkit-scrollbar {
+    width: 7px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 10px;
+}
+.navbar.sticky {
+    position: fixed;
+    top: 0;
+    transition: all 0.4s ease;
+    z-index: 999;
+}
+.movie__option {
+    font-size: 15px;
+    padding-right: 70px;
+    padding-top: 15px;
+    font-weight: 400;
+    cursor: pointer;
+}
+.movie__option:hover {
+    color: gray;
+}
+
+.movie__name {
+    padding-left: 200px;
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 10px;
+}
+.movie__options {
+    display: flex;
+    position: absolute;
+    right: 0;
+}
+.app {
+    color: #808080;
+}
+
+.row {
+    margin-left: 5px;
+}
+.row__title {
+    padding-top: 50px;
+}
+.row_title {
+    padding-top: 0px;
+}
+.row__posters {
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    height: 250px;
+    padding-right: 20px;
+    width: 100%;
+}
+.row_posters {
+    display: flex;
+    transition: all .2s ease-in-out;
+}
+.row_posters:hover {
+    transform: scale(1.09);
+    opacity: 1;
+}
+.row__posters::-webkit-scrollbar {
+    display: none;
+}
+.row__posterLarge {
+    width: 100%;
+    max-height: 250px;
+    cursor: pointer;
+    transition: transform 500ms;
+}
+.row__posterLarge:hover {
+    height: 300px;
+    width: 200px;
+    transform: scale(1.08);
+}
+.row___posters {
+    display: flex;
+    overflow-y:hidden;
+    overflow-x: scroll;
+    height: 250px;
+    padding-right: 5px;
+    width: 100%;
+}
